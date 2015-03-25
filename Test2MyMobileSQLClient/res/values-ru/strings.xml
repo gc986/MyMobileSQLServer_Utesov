@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <string name="ip_address">IP адрес</string>
+    <string name="port_address">Порт</string>
+    <string name="login">Логин</string>
+    <string name="pass">Пароль</string>
+    <string name="request">SQL запрос</string>
+    
+    <string name="connect">подключиться</string>
+    <string name="disconnect">отключиться</string>
+    <string name="send_request">Отправить запрос</string>
+    
+</resources>

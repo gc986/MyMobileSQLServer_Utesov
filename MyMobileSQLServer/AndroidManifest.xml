@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="ru.gc986.mymobilesqlserver"
+    android:versionCode="2"
+    android:versionName="0.01b" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="15" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="ru.gc986.mymobilesqlserver.MainActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <service
+			android:name="ru.gc986.mymobilesqlserver.service.MainServiceSQL"
+            android:enabled="true" >
+        </service>
+
+        <activity
+            android:name="ru.gc986.mymobilesqlserver.LogActivity"
+            android:label="@string/title_activity_log"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="ru.gc986.mymobilesqlserver.UsersActivity"
+            android:label="@string/title_activity_users"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="ru.gc986.mymobilesqlserver.ExecSQLActivity"
+            android:label="@string/title_activity_exec_sql" 
+            android:screenOrientation="portrait">
+        </activity>
+    </application>
+
+</manifest>
